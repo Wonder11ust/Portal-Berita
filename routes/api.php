@@ -57,6 +57,3 @@ Route::post('/dashboard/new-article',[DashboardArticleController::class,'store']
 Route::get('/dashboard/article/edit/{article:slug}',[DashboardArticleController::class,'edit'])->middleware('auth:sanctum');
 Route::put('/dashboard/article/edit/{article:slug}',[DashboardArticleController::class,'update'])->middleware('auth:sanctum');
 Route::delete('/dashboard/article/delete/{article:slug}',[DashboardArticleController::class,'destroy'])->middleware('auth:sanctum');
-// Route::middleware('guest')->group(function(){
-
-// });
